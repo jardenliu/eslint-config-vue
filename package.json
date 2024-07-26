@@ -1,0 +1,20 @@
+{
+  "name": "@jardenliu/eslint-config-vue",
+  "version": "1.0.1",
+  "description": "vue eslint config",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "LICENSE"
+  ],
+  "repository": "git@github.com:jardenliu/eslint-config-vue.git",
+  "author": "jardenliu <15915839707@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@jardenliu/eslint-config": "^1.0.0",
+    "eslint-plugin-vue": "^9.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.18.0"
+  }
+}
