@@ -12,7 +12,7 @@ module.exports = {
         },
     },
     parser: 'vue-eslint-parser', // parse
-    extends: ['@jardenliu', 'plugin:vue/recommended'],
+    extends: ['@jardenliu', 'plugin:vue/vue3-recommended'],
     rules: {
         'vue/comment-directive': 'off',
         'vue/attributes-order': 'warn',
