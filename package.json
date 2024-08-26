@@ -1,6 +1,6 @@
 {
   "name": "@jardenliu/eslint-config-vue3",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "vue eslint config",
   "main": "index.js",
   "files": [
@@ -11,7 +11,7 @@
   "author": "jardenliu <15915839707@163.com>",
   "license": "MIT",
   "dependencies": {
-    "@jardenliu/eslint-config": "^1.0.0",
+    "@jardenliu/eslint-config": "^1.0.3",
     "eslint-plugin-vue": "^9.27.0"
   },
   "devDependencies": {
