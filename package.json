@@ -2,12 +2,12 @@
   "name": "@jardenliu/eslint-config-vue3",
   "version": "2.0.0",
   "main": "lib/index.cjs",
-  "module": "lib/index.mjs",
+  "module": "lib/index.js",
   "type": "module",
   "types": "lib/index.d.ts",
   "exports": {
     ".": {
-      "import": "./lib/index.mjs",
+      "import": "./lib/index.js",
       "require": "./lib/index.cjs"
     }
   },
