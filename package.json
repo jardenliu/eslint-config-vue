@@ -12,6 +12,7 @@
     }
   },
   "scripts": {
+    "dev": "rollup -c -w",
     "build": "rollup -c",
     "prepublishOnly": "pnpm run build"
   },

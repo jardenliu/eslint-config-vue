@@ -3,7 +3,7 @@ import EslintPluginVue from 'eslint-plugin-vue'
 import EslintTs, { InfiniteDepthConfigWithExtends } from 'typescript-eslint'
 import VuePaser from 'vue-eslint-parser'
 
-const baseConfig : InfiniteDepthConfigWithExtends[] = [
+const baseConfig: InfiniteDepthConfigWithExtends[] = [
     ..._config,
     {
         files: ['**/*.{ts,tsx,js,jsx,mjs,cjs,vue}'],
@@ -12,10 +12,12 @@ const baseConfig : InfiniteDepthConfigWithExtends[] = [
             parser: VuePaser,
             parserOptions: {
                 ecmaVersion: 'latest',
+                parser: '@typescript-eslint/parser',
                 sourceType: 'module',
             },
         },
-    }, {
+    },
+    {
         rules: {
             'vue/comment-directive': 'off',
             'vue/attributes-order': 'warn',
@@ -46,4 +48,4 @@ export type InferredConfigType = ReturnType<typeof EslintTs.config>;
 const eslintConfig: InferredConfigType = EslintTs.config(...baseConfig, ...EslintPluginVue.configs['flat/recommended'])
 export default eslintConfig
 
-export const legacyConfig : InferredConfigType = EslintTs.config(..._config, ...EslintPluginVue.configs['flat/vue2-recommended'])
+export const legacyConfig : InferredConfigType = EslintTs.config(...baseConfig, ...EslintPluginVue.configs['flat/vue2-recommended'])
